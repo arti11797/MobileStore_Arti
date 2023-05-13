@@ -5,11 +5,19 @@ input[type=text], input[type=password] {
     margin: 5px 0 0px 0;
 
     border: none;
-    background: #f1f1f1;
+    background:  white;
+  }
+  .signimg{
+    height: 400px;
+    width: 400px;
+    border-radius: 1px;
+    margin-left: 300px;
+    margin-bottom: 80px;
+    box-shadow: inset -60px -60px 70px 80px white;
   }
   
   input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
+    background-color: white;
     outline: none;
     
   }  
@@ -45,7 +53,7 @@ input[type=text], input[type=password] {
   
   /* Add padding to containersign elements */
  form{
-margin-left: 600px;
+margin-left: 100px;
 margin-bottom: 50px;
     
   }

@@ -1,5 +1,6 @@
 .product{
 margin-left: 400px;
+display: inline-block;
 }
   
 .myUL>li{

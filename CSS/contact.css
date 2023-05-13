@@ -73,10 +73,18 @@
     font-weight: 600;
     color: #3e2093;
   }
- .input-box{
+ .input-box1{
     height: 50px;
     width: 400px;
-    margin: 12px 0;
+    margin: 40px 0px 0px 0px;
+    border: none;
+    outline: none;
+    
+  }
+  .input-box2{
+    height: 50px;
+    width: 400px;
+    margin: 20px 0px 0px 0px;
     border: none;
     outline: none;
     
@@ -98,19 +106,19 @@
   .right-side .button{
     display: inline-block;
 
-    margin-top: 70px;
+    margin-top: 40px;
   }
-  .button input[type="button"]{
+  .button{
     color: #fff;
     font-size: 18px;
-    
+   
     border-radius: 6px;
     background: #3e2093;
     cursor: pointer;
     height: 40px;
-    width:200px;
+    width:150px;
     padding: 10px;
-    margin: auto;
+
   }
   .button input[type="button"]:hover{
     background: #5029bc;
