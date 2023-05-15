@@ -1,10 +1,6 @@
-.product{
-margin-left: 400px;
-display: inline-block;
-}
-  
+ 
 .myUL>li{
-   list-style-type: none;
+  list-style-type:square; 
     font-size: medium;
     text-align: left;
     padding: 6px;
@@ -19,8 +15,98 @@ width: 50px;
   }
   tbody td:first-child{
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     padding: 10px;
     margin: 0px;
     
   }
+ .productsec{
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 450px;
+  margin-right: 0px;
+  color:rgb(6, 68, 93); 
+ }
+
+ img {
+  vertical-align: middle;
+  
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerproduct {
+  margin-left: 500px;
+  margin-right:500px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  margin-left: 150px;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+ position: absolute;
+  top:30%;
+  padding: 16px;
+  margin-top: 80px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgb(102, 160, 182);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 505px;
+  border-radius: 3px 0 0 3px;
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color:rgb(6, 68, 93); 
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: rgb(102, 160, 182);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 22.66%;
+
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

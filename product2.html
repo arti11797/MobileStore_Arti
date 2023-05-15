@@ -25,21 +25,62 @@
     <!--  <p style="padding-left: 400px; color: rgb(9, 101, 138); font-size: 30px; font-family:Verdana, Geneva, Tahoma, sans-serif;">MobileStore</p> -->
    
      </div>
-          <div class="product">
-            <img style="height: 300px; width: 200px;  border-radius:25px;" src="Images/ph3.jpg" alt="Avatar" >
+            <div class="containerproduct">
+              <div class="mySlides">
+                
+                <img style="height: 300px; width: 200px;  border-radius:25px;" src="Images/ph3.jpg" style="width:100%">
+              </div>
             
-            <div >
-              <p style="display: block; font-size: larger;"><b>Samsung S23plus</b></p> 
-              <p> <strong>₹94,999</strong>  <del> ₹1,16,999</del> <p style="color: green; display: block;">18% off</p> </p> 
-              
-            </div>
+              <div class="mySlides">
+                
+                <img style="height: 300px; width: 200px;  border-radius:25px;" src="Images/s233.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+               
+                <img style="height: 300px; width: 200px;  border-radius:25px;" src="Images/s231.jpg" style="width:100%">
+              </div>
+             
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+            
+              <div class="row">
+                <!-- <div class="column">
+                  <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div> -->
+                <div class="column">
+                  <img class="demo cursor" src="Images/ph3.jpg" style="width:100%" onclick="currentSlide(1)" alt="1">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Images/s233.jpg" style="width:100%" onclick="currentSlide(2)" alt="2">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Images/s231.jpg" style="width:100%" onclick="currentSlide(3)" alt="3">
+                </div>
+                    
+                
+              </div>
+           
+            
+           
           </div>
-          <div style="display: block; text-align: center;">
-
+          <div >
+           
+          </div>
+          
+          <div class="productsec">
+            <p style="display: block; font-size: larger;"><b>Samsung S23</b></p> 
+            <p> <strong>₹55,999</strong>  <del> ₹66,999</del> <p style="color: green; display: block;">10% off</p> </p> 
+            
             <section>
    
               <table style="border: 1px solid black; margin:0px 30px 30px 30px;">
-                  <caption style="font-size: larger; font-weight: bold; margin-top: 0px;">Specification</caption>
+                  <caption style="font-size: larger; font-weight: bold; margin-top: 0px; padding-bottom: 10px;">Specification</caption>
                   
                   <tbody>
                       <tr><td >Color</td><td style="width:400px; text-align: left;" >Black, Silver</td></tr>
@@ -112,6 +153,38 @@
 </div>
 
 <p class="footerstyle">© 2023 Copyright MobileStore India</p> 
-     
+   
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  
+
 </body>
 </html>
